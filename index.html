@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Fail</title>
+<link rel="stylesheet" href="fail.css" type="text/css" />
+</head>
+
+<body>
+
+<h1 id="title">Fail</h1>
+
+<video controls width="400" height="400"
+	autoplay muted preload= "auto">
+<source src="https://www.cs.tufts.edu/comp/20/fail.mp4" id="failvideo" type="video/mp4">
+<track label="English CC's" kind="subtitles" scr="subtitles.vtt" srclang="en">
+<p> Your browser doesn't support HTML5 video. Here is a <a href="https://www.cs.tufts.edu/comp/20/fail.mp4">link to the video</a> instead.</p></p>
+</video>
+<p> Time (in seconds): <span id="timer"></span></p>
+
+<div id="lyrics"></div>
+
+<p><button type="button" onclick="video.play();">Play</button> 
+<p><button type="button" onclick="video.pause();">Pause</button> 
+<p><button type="button" onclick="video.currentTime = video.currentTime - 1;"><<Rewind</button> 
+<p><button type="button" onclick="video.currentTime = video currentTime + 1">>>FastForward</button> 
+</p>
+
+<script type="text/javascript">
+
+	var video = document.getElementById("video");
+	//var caption = document.getElementById("captions");
+	var timer = document.getElementById("timer");
+	video.addEventListener("timeupdate", function() {
+		console.log("TEST!");
+		timer.innerHTML = video.currentTime;
+		
+		// "if (video.currentTime < 4) {
+		//	caption.innerHTML ="<h3>This will not work on FireFox...Sorry!</h3>";
+		//}
+		//else if (video.currentTime > 4 && video.currentTime < 5.5) {
+		//	caption.innerHTML = "<h3>Double Rainbow!</h3>";
+		//}
+		//else if (video.currentTime > 5.5 && video.currentTime < 6.5) {
+		//	caption.innerHTML = "<h1>OH MY GOD!</h1>";
+		//}
+		//else if (video.currentTime > 6.5 && video.currentTime < 16.8) {
+		//	caption.innerHTML = "<h3>Double Rainbow!</h3>";
+		//}
+		//else if (video.currentTime > 16.8 && video.currentTime < 18) {
+		//	caption.innerHTML = "<h1>WHAT DOES THIS MEAN?!</h1>";
+		//}
+		//else if (video.currentTime > 18 && video.currentTime < 20) {
+		//	caption.innerHTML = "<h2>It's so BRIGHT, so VIVID!</h2>";
+		//}
+		//else if (video.currentTime > 20 && video.currentTime < 22.5) {
+		//	caption.innerHTML = "<h3>Double Rainbow!</h3>";
+		//}
+		//else if (video.currentTime > 22.5 && video.currentTime < 24.5) {
+			//caption.innerHTML = "<h2>It's so intense...</h2>";
+		//}
+		//else if (video.currentTime > 24.5 && video.currentTime < 26) {
+		//	caption.innerHTML = "<h1>WHAT DOES THIS MEAN?!</h1>";
+		//}
+		//else if (video.currentTime > 26 && video.currentTime < 32.3) {
+		//	caption.innerHTML = "<h3>It's starting to look like a TRIPLE RAINBOW!</h3>";
+		//}
+		//else if (video.currentTime > 32.3 && video.currentTime < 52) {
+		//	caption.innerHTML = '<p><img src="spongebob.jpg" alt="Image" /></p>';
+		//}
+		//else if (video.currentTime > 52) {
+		//	caption.innerHTML = "<h3>Thanks For Watching!</h3>";
+		//}
+		//else {
+		//	caption.innerHTML ="";
+		//}
+		//}, false);
+	
+	
+	
+</script>
+</body>
+</html>	
+

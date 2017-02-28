@@ -1,0 +1,11 @@
+body {
+text-align: center;
+font: Helvetica;
+}
+#Title { 
+color:Black;
+text-align: center;
+font: helvetica;
+font-weight: 800; 
+font-variant: small-caps
+}
