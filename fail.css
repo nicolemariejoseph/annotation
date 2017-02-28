@@ -1,11 +1,13 @@
 body {
 text-align: center;
-font: Helvetica;
+font-family: "Helvetica", normal, sans-serif;
+font-size: 14pt;
+ 
 }
-#Title { 
-color:Black;
+Title { 
+
 text-align: center;
-font: helvetica;
+font: arial;
 font-weight: 800; 
 font-variant: small-caps
 }

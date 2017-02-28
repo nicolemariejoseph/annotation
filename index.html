@@ -8,9 +8,10 @@
 
 <body>
 
-<h1 id="title">Fail!</h1>
+<h1 id="title">Fail</h1>
 
-<video src="https://www.cs.tufts.edu/comp/20/fail.mp4" id="video"></video>
+<video src="https://www.cs.tufts.edu/comp/20/fail.mp4" id="video" controls>
+</video>
 
 <p> Time (in seconds): <span id="timer"></span></p>
 
@@ -19,7 +20,7 @@
 <p><button type="button" onclick="video.play();">Play</button> 
 <button type="button" onclick="video.pause();">Pause</button> 
 <button type="button" onclick="video.currentTime = video.currentTime - 1;"><< Rewind</button> 
-<button type="button" onclick="video.currentTime = video currentTime + 1">>> FastForward</button> 
+<button type="button" onclick="video.currentTime = video.currentTime + 1">>> FastForward</button> 
 </p>
 
 <script type="text/javascript">
@@ -32,7 +33,7 @@
 		timer.innerHTML = video.currentTime;
 		
 		if (video.currentTime < 3) {
-			caption.innerHTML ="<h3>This will not work on FireFox...Sorry!</h3>";
+			caption.innerHTML ="<h3> </h3>";
 		}
 		else if (video.currentTime > 3.1 && video.currentTime < 8) {
 			caption.innerHTML = "<h3>Mariah Fail or Conspiracy!</h3>";
